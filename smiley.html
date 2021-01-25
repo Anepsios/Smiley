@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #canvas4{
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas4" width="600" height="400"></canvas>
+
+    <script>
+        ctx = document.getElementById("canvas4").getContext("2d");
+        ctx.strokeStyle = "black";
+        ctx.beginPath();
+        ctx.arc(200, 200, 106, 0, 2*Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(200, 200, 100, 0, 2*Math.PI);
+        ctx.fillStyle = "yellow";
+        ctx.fill();
+
+        
+        //left eye
+        ctx.fillStyle = "black";
+        ctx.fillRect(123,190,45,4);
+        
+        ctx.beginPath();
+        ctx.arc(145, 175, 30, 0.65, 0.8*Math.PI, Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.arc(145, 175, 27, 0.65, 0.8*Math.PI, Math.PI);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(144, 170, 18, 0, 2*Math.PI);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(144, 170, 15.5, 0, 2*Math.PI);
+        ctx.fillStyle = "lightgreen";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(144, 170, 7.5, 0, 2*Math.PI);
+        ctx.fillStyle = "yellow";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(144, 170, 2.5, 0, 2*Math.PI);
+        ctx.fillStyle = "red";
+        ctx.fill();
+
+        //right eye
+        ctx.fillStyle = "black";
+        ctx.fillRect(207,190,45,4);
+        
+        ctx.beginPath();
+        ctx.arc(230, 175, 30, 0.65, 0.8*Math.PI, Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.arc(230, 175, 26.5, 0.65, 0.8*Math.PI, Math.PI);
+        ctx.fillStyle = "white";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(229, 170, 18, 0, 2*Math.PI);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+        
+        ctx.beginPath();
+        ctx.arc(229, 170, 15.5, 0, 2*Math.PI);
+        ctx.fillStyle = "lightgreen";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(229, 170, 7.5, 0, 2*Math.PI);
+        ctx.fillStyle = "yellow";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(229, 170, 2.5, 0, 2*Math.PI);
+        ctx.fillStyle = "red";
+        ctx.fill();
+        
+        //mouth
+        ctx.fillStyle = "black";
+        ctx.fillRect(128,210,138,5);
+
+        ctx.beginPath();
+        ctx.arc(200, 215, 64, 0, 1*Math.PI);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(200, 215, 60, 0, 1*Math.PI);
+        ctx.fillStyle = "purple";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(218, 275, 30, -0.45, 1*Math.PI, 1);
+        ctx.fillStyle = "pink";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(200, 211, 64, 0, 1*Math.PI);
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "black";
+        ctx.stroke();
+    </script>
+</body>
+</html>
